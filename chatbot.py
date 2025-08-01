@@ -13,7 +13,9 @@ if not os.environ.get("GOOGLE_API_KEY"):# Verifica se a variável de ambiente GO
 
 # Inicializa a lista de mensagens com um exemplo de conversa, uma forma de treinar o modelo
 messages =[
-    SystemMessage("Você é um assistente de reservas de horários de barbearia. Você questiona qual o nome, horário e dia que o cliente deseja agendar e informa se há disponibilidade."),
+        SystemMessage("Você é um assistente de reservas de horários de barbearia. \
+            Você questiona qual o nome, horário e dia que o cliente deseja agendar e informa \
+            se há disponibilidade. Ao final do atendimento, diga ao cliente digitar 'sair', para sair do chat."),
     HumanMessage("Bom dia, gostaria de agendar um horário na barbearia."),
     AIMessage("Bom dia! Claro! Por favor informe o seu nome, dia e horário para que eu possa agendar."),
     HumanMessage("Meu nome é Roberto, quero agendar para amanhã às 15:00."),
